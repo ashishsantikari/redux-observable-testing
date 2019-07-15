@@ -1,3 +1,12 @@
+# Testing Epics written using redux-observable
+I have tried to jot down some example which may help others to write unit test for epics( Marble testing method ).
+
+For more info about marbles refer [Marble testing Observable Introduction](https://medium.com/@bencabanes/marble-testing-observable-introduction-1f5ad39231c)
+
+For more info about hot and cold observables refer [Hot vs Cold Observables](https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339)
+
+--------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
