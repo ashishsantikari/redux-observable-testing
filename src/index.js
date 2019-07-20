@@ -1,19 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
+import { createEpicMiddleware } from 'redux-observable';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from "redux-devtools-extension";
 import App from './App';
-import reducers from './store/reducers'
+import configureStore from './store/configureStore';
 import * as serviceWorker from './serviceWorker';
 
 import './index.css';
 
-const store = createStore(
-    reducers,
-    composeWithDevTools(applyMiddleware(thunk)),
-);
+const store = configureStore();
 
 ReactDOM.render(
     <Provider store={store} >
