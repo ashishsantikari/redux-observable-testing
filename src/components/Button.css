@@ -1,0 +1,16 @@
+.btn {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 30px auto;
+    outline: none;
+    overflow: hidden;
+    color: #FFF;
+    background-color: #2ecc71;
+    box-shadow: 0 1px 4px rgba(0,0,0, 0.6);
+}
+
+.btn span {
+    display: block;
+    padding: 12px 24px;
+}

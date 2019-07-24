@@ -1,4 +1,43 @@
 .App {
+  background-color: #6200EE;
+  color: #FFF;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+}
+
+.row {
+  display: block;
+}
+
+.col {
+  display: inline-block;
   text-align: center;
-  margin-top: 30px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.output{
+  color: red;
+  width: 80%;
+  margin: auto;
+  border: 2px solid yellow;
+}
+
+.call-to-action {
+  display: inline-block;
+  width: 50%;
+}
+
+/** for tablets and above **/
+@media only screen and (min-width: 600px){
+  .App{
+    width: 50%;
+    margin: 2% auto;
+    height: auto;
+  }
+  .col {
+    text-align: center;
+    width: 50%;
+  }
 }
