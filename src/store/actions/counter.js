@@ -1,26 +1,10 @@
 export const INCREMENT_COUNT = 'INCREMENT';
 export const DECREMENT_COUNT = 'DECREMENT';
 
-//action creaters
-function increment() {
-    console.log("increment");
-    return { type: INCREMENT_COUNT };
-}
+// action creaters
+const increment = () => ({ type: INCREMENT_COUNT });
+const decrement = () => ({ type: DECREMENT_COUNT });
 
-function decrement() {
-    return { type: DECREMENT_COUNT };
-}
-
-
-//action dispatchers
-export function incrementCount(){
-    return function(dispatch){
-        dispatch(increment());
-    }
-}
-
-export function decrementCount(){
-    return function(dispatch){
-        dispatch(decrement());
-    }
-}
+// action dispatchers
+export const incrementCount = () => dispatch => dispatch(increment());
+export const decrementCount = () => dispatch => dispatch(decrement());

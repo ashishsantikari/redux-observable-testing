@@ -1,9 +1,10 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest": true
     },
-    "extends": "google",
+    "extends": "airbnb",
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -21,6 +22,24 @@
     "rules": {
         "quotes": ["error", "single"],
         "no-unused-vars": "error",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
-    }
+        "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+        "react/prop-types": [0],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+              "devDependencies": [
+                ".storybook/**",
+                "**/*.story.js",
+                "**/*.test.js"
+              ]
+            }
+          ]
+    },
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "paths": ["src"]
+          }
+        }
+      }
 }

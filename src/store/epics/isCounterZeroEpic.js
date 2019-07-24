@@ -1,12 +1,13 @@
-import { map, mapTo, filter, distinctUntilChanged } from 'rxjs/operators';
-import { flash } from '../actions';
-import { flashZeroCount } from '../actions/flash';
+import {
+  map, mapTo, filter, distinctUntilChanged,
+} from 'rxjs/operators';
+import { flashZeroCount } from 'store/actions/flash';
 
-export default function isCounterZeroEpic(action$, state$){
-    return state$.pipe(
-        map(state => state.counter.value),
-        distinctUntilChanged(),
-        filter(count => count === 0),
-        mapTo(flashZeroCount()),
-    );
-}
+const isCounterZeroEpic = (action$, state$) => state$.pipe(
+  map(state => state.counter.value),
+  distinctUntilChanged(),
+  filter(count => count === 0),
+  mapTo(flashZeroCount()),
+);
+
+export default isCounterZeroEpic;
