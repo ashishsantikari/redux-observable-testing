@@ -1,12 +1,21 @@
 container:
-  image: node:latest
+  image: node:11
 
-check_task:
-  lint_script: yarn lint
 
-test_task:
+task:
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat yarn.lock
     populate_script: yarn install
-  test_script: yarn test
+
+    matrix:
+    - name: Lint
+      lint_script: yarn run lint
+    - name: Test
+      test_script: yarn run test
+    - name: Build
+      depends_on:
+        - Lint
+        - Test
+      only_if: $BRANCH == "master"
+      publish_script: yarn run build
