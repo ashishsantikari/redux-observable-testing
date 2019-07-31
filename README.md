@@ -5,6 +5,11 @@ For more info about marbles refer [Marble testing Observable Introduction](https
 
 For more info about hot and cold observables refer [Hot vs Cold Observables](https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339)
 
+# Screenshots (Not so fancy app)
+![Desktop View](/screenshots/desktop_view.png?raw=true "Desktop View")
+
+![Mobile View](/screenshots/mobile_view.png?raw=true "Mobile View")
+
 --------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
