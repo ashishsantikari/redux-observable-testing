@@ -11,7 +11,7 @@
     "redux-devtools-extension": "2.13.8",
     "redux-observable": "1.1.0",
     "redux-thunk": "2.3.0",
-    "rxjs": "6.5.2"
+    "rxjs": "6.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
