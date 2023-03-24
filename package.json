@@ -10,7 +10,7 @@
     "redux": "4.1.2",
     "redux-devtools-extension": "2.13.9",
     "redux-observable": "1.2.0",
-    "redux-thunk": "2.4.1",
+    "redux-thunk": "2.4.2",
     "rxjs": "6.6.7"
   },
   "scripts": {
